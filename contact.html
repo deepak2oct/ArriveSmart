@@ -4,31 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/ArriveSmart/assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
 
 </head>
 <body>
     <div id="main">
         <div id="upper">
-          <div id="nav">
+        <nav class="navbar">
+          <div class="navbrand">
             <div id="left">
               <div class="logo-icon"></div>
               <div class="logo-text">
                 <span class="arrive">Arrive</span><span class="smart">Smart</span>
               </div>
             </div>
-            <div id="right">
-              <h3><a id="Home" class="same" href="/">Home</a></h3>
-              <h3><a id="Tutorials" class="same" href="/faq.html">FAQ</a></h3>
-              <h3>
-                <a id="Contact" class="same" href="/contact.html">Contact</a>
-              </h3>
-              <!-- <h3 id="Follow">
-                <a id="Follow" class="same" href="/follow.html">Follow Us</a>
-              </h3> -->
+            <div class="burger" id="burger">
+              <span class="burger-open">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+                  <g fill="#fff" fill-rule="evenodd">
+                    <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+                  </g>
+                </svg>
+              </span>
+              <span class="burger-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <path fill="#ffff" fill-rule="evenodd"
+                    d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" />
+                </svg>
+              </span>
             </div>
           </div>
-        </div>
+          <ul class="menu" id="menu">
+            <li class="menu-item"><a id="Home" class="same" href="/ArriveSmart/index.html">Home</a></li>
+            <li class="menu-item"><a id="Tutorials" class="same" href="/ArriveSmart/faq.html">FAQ</a></li>
+            <li class="menu-item"><a id="Contact" class="same" href="/ArriveSmart/contact.html">Contact</a></li>
+          </ul>
+        
+        </nav>
         <div id="middle">
             <h1 id="confirst">Contact Us</h1>
             <h3 id="consecond">We're Here to Help You Arrive Smart!</h3>
@@ -80,5 +95,9 @@
               </div>
           </div>
       </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="/ArriveSmart/assets/burgerScript.js"></script>
 </body>
 </html>
